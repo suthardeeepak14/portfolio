@@ -53,6 +53,17 @@ export const experienceData = [
 
 export const projectsData = [
   {
+    title: "ToDo List Web App",
+    subtitle: "Smart Task Tracker with LocalStorage Integration",
+    description: [
+      "A simple and responsive ToDo List web application built using HTML, Tailwind CSS, and JavaScript. This app allows users to add, delete, and manage their daily tasks efficiently." ,
+      "It uses the browser's localStorage to save tasks locally, so users don't lose their data even after refreshing or closing the browser.The interface is clean, mobile - friendly, and designed for a smooth user experience.",
+    ],
+    gradient: "from-blue-500 to-purple-600",
+    demoLink: "https://todo-list-app-kittu.netlify.app/",
+    githubLink: "https://github.com/suthardeeepak14/todo-list",
+  },
+  {
     title: "CineQuest",
     subtitle: "Real-Time Movie Search",
     description: [
