@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { FaEnvelope, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
+import { FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-hot-toast";
 import { personalInfo } from "../data";
+
 function Contact() {
   const [isLoading, setIsLoading] = useState(false);
 
@@ -12,6 +13,15 @@ function Contact() {
     const form = e.currentTarget;
     const formData = new FormData(form);
 
+    const enteredEmail = formData.get("email").trim().toLowerCase();
+    const ownerEmail = personalInfo.email.trim().toLowerCase();
+
+    // Prevent form submission if user's email matches the owner's
+    if (enteredEmail === ownerEmail) {
+      toast.error("You cannot use this email address.");
+      return;
+    }
+
     setIsLoading(true);
 
     try {
@@ -19,8 +29,8 @@ function Contact() {
         "service_s3z46dv",
         "template_6spcytm",
         {
-          name: formData.get("name"),
-          email: formData.get("email"),
+          from_name: formData.get("name"),    
+          from_email: formData.get("email"),  
           message: formData.get("message"),
         },
         "8fz4jX1Q0shV44d7P"
