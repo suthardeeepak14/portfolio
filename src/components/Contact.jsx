@@ -16,7 +16,6 @@ function Contact() {
     const enteredEmail = formData.get("email").trim().toLowerCase();
     const ownerEmail = personalInfo.email.trim().toLowerCase();
 
-    // Prevent form submission if user's email matches the owner's
     if (enteredEmail === ownerEmail) {
       toast.error("You cannot use this email address.");
       return;

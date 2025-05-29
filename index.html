@@ -6,6 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Deepak || Frontend Developer</title>
+    <!-- Cookie Consent CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+
+<!-- Cookie Consent Script -->
+<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
+
+<script>
+  window.addEventListener("load", function () {
+    window.cookieconsent.initialise({
+      palette: {
+        popup: {
+          background: "#2c2c2c",
+          text: "#ffffff"
+        },
+        button: {
+          background: "#f44336",
+          text: "#ffffff"
+        }
+      },
+      theme: "classic",
+      position: "bottom", 
+      content: {
+        message: "This website uses cookies to ensure you get the best experience.",
+        dismiss: "Got it!",
+        link: "Learn more",
+        href: "https://www.cookiesandyou.com/"
+      }
+    });
+  });
+</script>
+
   </head>
   <body>
     <div id="root"></div>

@@ -5,7 +5,7 @@ import {
   FaReact,
   FaBootstrap,
   FaGit,
-} from "react-icons/fa";
+} from  "react-icons/fa";
 import { SiTailwindcss, SiMysql } from "react-icons/si";
 
 export const personalInfo = {
