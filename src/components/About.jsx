@@ -18,16 +18,33 @@ function About() {
           </h2>
           <p className="text-lg text-gray-300 mb-6">{aboutData.description}</p>
           <div className="flex flex-wrap justify-center gap-4 mt-8">
-            <div className="flex items-center gap-2 bg-gray-700/50 px-4 py-2 rounded-full">
-              <FaEnvelope className="text-blue-400" />
-              <span>suthardeepak257@gmail.com</span>
-            </div>
-
-            <div className="flex items-center gap-2 bg-gray-700/50 px-4 py-2 rounded-full">
-              <FaMapMarkerAlt className="text-blue-400" />
-              <span>Mumbai</span>
-            </div>
-          </div>
+  <a
+    href="mailto:suthardeepak257@gmail.com"
+    className="flex items-center gap-2 bg-gray-700/50 px-4 py-2 rounded-full hover:bg-gray-600 transition"
+    aria-label="Send email"
+  >
+    <FaEnvelope className="text-blue-400" />
+    <span>suthardeepak257@gmail.com</span>
+  </a>
+  {/* <a
+    href="https://maps.google.com/?q=Mumbai"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center gap-2 bg-gray-700/50 px-4 py-2 rounded-full hover:bg-gray-600 transition"
+    aria-label="View location on Google Maps"
+  >
+    <FaMapMarkerAlt className="text-blue-400" />
+    <span>Mumbai</span>
+  </a> */}
+  <a
+    href="/Deepak_Suthar_Resume.pdf"
+    download
+    className="px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full font-medium hover:from-blue-600 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-blue-500/20"
+    aria-label="Download Resume"
+  >
+    <span>Download Resume</span>
+  </a>
+</div>
         </motion.div>
       </div>
     </section>

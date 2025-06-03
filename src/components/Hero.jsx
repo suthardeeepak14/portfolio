@@ -65,10 +65,13 @@ function Hero() {
 
           <div className="flex justify-center space-x-4">
             <a
-              href="#contact"
+              href="/Deepak_Suthar_Resume.pdf"
+              download
+              aria-label="Download my resume"
+              title="Download Resume"
               className="px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full font-medium hover:from-blue-600 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-blue-500/20"
             >
-              Contact Me
+              Download Resume
             </a>
             <a
               href="#projects"
@@ -76,6 +79,7 @@ function Hero() {
             >
               View Projects
             </a>
+      
           </div>
         </motion.div>
       </div>
