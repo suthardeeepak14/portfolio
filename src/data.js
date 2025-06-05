@@ -60,6 +60,7 @@ export const projectsData = [
       "It uses the browser's localStorage to save tasks locally, so users don't lose their data even after refreshing or closing the browser.",
     ],
     gradient: "from-blue-500 to-purple-600",
+    image: "https://api.microlink.io/?url=https://todo-list-app-kittu.netlify.app/&screenshot=true&meta=false&embed=screenshot.url",
     demoLink: "https://todo-list-app-kittu.netlify.app/",
     githubLink: "https://github.com/suthardeeepak14/todo-list",
     techStack: [
@@ -76,6 +77,7 @@ export const projectsData = [
       "Added functionality for users to create personalized movie lists, allowing them to add favorite movies to a custom list and rate them, providing a tailored experience.",
     ],
     gradient: "from-blue-500 to-purple-600",
+    image:"https://api.microlink.io/?url=https://cinequest-react-app.netlify.app/&screenshot=true&meta=false&embed=screenshot.url",
     demoLink: "https://cinequest-react-app.netlify.app/",
     githubLink: "https://github.com/suthardeeepak14/CineQuestReactApp",
     techStack: [
@@ -95,6 +97,7 @@ export const projectsData = [
     gradient: "from-red-500 to-yellow-500",
     demoLink: "https://kittu-pizza.netlify.app/",
     githubLink: "https://github.com/suthardeeepak14/Fast-pizza",
+    image: "https://api.microlink.io/?url=https://kittu-pizza.netlify.app/&screenshot=true&meta=false&embed=screenshot.url",
     techStack: [
       { name: "React.js", icon: FaReact },
       { name: "Tailwind CSS", icon: SiTailwindcss },

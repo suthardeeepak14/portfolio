@@ -27,11 +27,20 @@ function Projects() {
                 whileHover={{ y: -10 }}
                 className="bg-gray-800/50 rounded-xl overflow-hidden hover:shadow-lg hover:shadow-blue-500/10 transition-all duration-300"
               >
-                <div
+                {/* <div
                   className={`h-48 bg-gradient-to-r ${project.gradient} flex items-center justify-center`}
                 >
+                  
                   <h3 className="text-2xl font-bold">{project.title}</h3>
-                </div>
+                </div> */}
+                <div className="h-48 w-full bg-gray-900 flex items-center justify-center overflow-hidden">
+  <img
+    src={project.image}
+    alt={project.title}
+    className="object-object w-full h-full"
+    loading="lazy"
+  />
+</div>
                 <div className="p-6 ">
                   <h3 className="text-xl font-bold mb-2">{project.subtitle}</h3>
                   {project.description.map((desc, i) => (
