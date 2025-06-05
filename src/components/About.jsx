@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion } from "framer-motion"
 import { FaEnvelope, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
 import { personalInfo, aboutData } from "../data";
 function About() {
@@ -8,8 +8,8 @@ function About() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
+          transition={{ duration: 0.9 }}
+          
           className="max-w-3xl mx-auto text-center"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-8 relative inline-block">

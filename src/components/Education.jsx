@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion } from "framer-motion"
 import { educationData } from "../data";
 function Education() {
   return (
@@ -7,8 +7,8 @@ function Education() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
+          transition={{ duration: 0.9 }}
+          
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center relative inline-block">
             Education

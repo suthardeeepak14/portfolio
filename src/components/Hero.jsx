@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion } from "framer-motion"
 import { TypeAnimation } from "react-type-animation";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import { personalInfo } from "../data";
@@ -10,13 +10,13 @@ function Hero() {
       className="h-screen flex items-center justify-center relative"
       initial={{ opacity: 0, scale: 0.9 }}
       animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.8 }}
+      transition={{ duration: 0.9 }}
     >
       <div className="container mx-auto px-6 text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.9 }}
         >
           <h1 className="text-4xl md:text-6xl font-bold mb-4">
             Hi, I'm{" "}

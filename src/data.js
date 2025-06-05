@@ -54,14 +54,19 @@ export const experienceData = [
 export const projectsData = [
   {
     title: "ToDo List Web App",
-    subtitle: "Smart Task Tracker with LocalStorage Integration",
+    subtitle: "ToDo with LocalStorage Integration",
     description: [
       "A simple and responsive ToDo List web application built using HTML, Tailwind CSS, and JavaScript. This app allows users to add, delete, and manage their daily tasks efficiently." ,
-      "It uses the browser's localStorage to save tasks locally, so users don't lose their data even after refreshing or closing the browser.The interface is clean, mobile - friendly, and designed for a smooth user experience.",
+      "It uses the browser's localStorage to save tasks locally, so users don't lose their data even after refreshing or closing the browser.",
     ],
     gradient: "from-blue-500 to-purple-600",
     demoLink: "https://todo-list-app-kittu.netlify.app/",
     githubLink: "https://github.com/suthardeeepak14/todo-list",
+    techStack: [
+      { name: "HTML5", icon: FaHtml5 },
+      { name: "Tailwind CSS", icon: SiTailwindcss },
+      { name: "JavaScript", icon: FaJs }
+    ]
   },
   {
     title: "CineQuest",
@@ -73,6 +78,11 @@ export const projectsData = [
     gradient: "from-blue-500 to-purple-600",
     demoLink: "https://cinequest-react-app.netlify.app/",
     githubLink: "https://github.com/suthardeeepak14/CineQuestReactApp",
+    techStack: [
+      { name: "React.js", icon: FaReact },
+      { name: "Tailwind CSS", icon: SiTailwindcss },
+      { name: "JavaScript", icon: FaJs }
+    ]
   },
   {
     title: "Fast Pizza",
@@ -80,10 +90,16 @@ export const projectsData = [
     description: [
       "Developed a fully responsive pizza ordering website using React.js , ensuring fast performance and a seamless user experience.",
       "Designed an intuitive UI with Tailwind CSS, allowing users to browse pizzas effortlessly.",
+      "Used React state management for cart and order logic, and ensured mobile-first design for accessibility on all devices."
     ],
     gradient: "from-red-500 to-yellow-500",
     demoLink: "https://kittu-pizza.netlify.app/",
     githubLink: "https://github.com/suthardeeepak14/Fast-pizza",
+    techStack: [
+      { name: "React.js", icon: FaReact },
+      { name: "Tailwind CSS", icon: SiTailwindcss },
+      { name: "JavaScript", icon: FaJs }
+    ]
   },
 ];
 

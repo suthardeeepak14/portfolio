@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion } from "framer-motion"
 import {
   SiHtml5,
   SiCss3,
@@ -18,8 +18,8 @@ function Skills() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
+          transition={{ duration: 0.9 }}
+          
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center relative inline-block">
             Skills
@@ -33,8 +33,8 @@ function Skills() {
                   key={index}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  viewport={{ once: true }}
+                  transition={{ duration: 0.9, delay: index * 0.1 }}
+                  
                   className="flex flex-col items-center justify-center p-6 bg-gray-800/50 rounded-xl hover:bg-gray-700/50 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/10"
                 >
                   <Icon className={`text-4xl ${skill.color}`} />{" "}
